@@ -7,6 +7,7 @@ http://www.cnblogs.com/androidsuperman/p/4267803.html
 
 MaterialEditText：
 android studio 版本地址：
+
 https://github.com/rengwuxian/MaterialEditText
 
 我这个是在studio版本下改装成eclipse版本的
