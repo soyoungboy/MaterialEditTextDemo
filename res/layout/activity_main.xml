@@ -1,0 +1,103 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="outsideOverlay"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Basic:"
+                android:textColor="#333333"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical" >
+
+                <com.rengwuxian.materialeditlibrary.MaterialEditText
+                    android:id="@+id/basicEt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Basic" />
+
+                <Button
+                    android:id="@+id/enableBt"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="DISABLE" />
+            </LinearLayout>
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Custom Base Color"
+                app:baseColor="@color/red" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Custom Primary Color"
+                app:baseColor="@color/red"
+                app:primaryColor="@color/green" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Floating Label"
+                app:floatingLabel="none" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Highlight Floating Label"
+                app:floatingLabel="normal" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Highlight Floating Label"
+                app:floatingLabel="highlight" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:id="@+id/singleLineEllipsisEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Single Line Ellipsis"
+                android:text="soyoungboy is beautiful ,so cool ,so nice ,so smart"
+                app:singleLineEllipsis="true" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Max Characters"
+                app:maxCharacters="10" />
+
+            <com.rengwuxian.materialeditlibrary.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorColor="@color/green"
+                app:maxCharacters="10" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
